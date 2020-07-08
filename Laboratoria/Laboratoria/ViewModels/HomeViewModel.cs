@@ -21,7 +21,15 @@ namespace Laboratoria.ViewModels
         readonly INavigation _navigation;
         private ICommand _navigateToDetailsPageCommand;
         private ICommand _pullToRefreshCommand;
+        private ICommand _InfoWindowClickedCommand;
         private Location _location;
+        private List<Measurements> Measurements;
+        private List<MapLocation> _Locations;
+        public List<MapLocation> Locations
+        {
+            get => _Locations;
+            set => SetProperty(ref _Locations, value);
+        }
         private List<Measurements> _MeasurmentsList;
         public List<Measurements> MeasurmentsList
         {
@@ -48,6 +56,9 @@ namespace Laboratoria.ViewModels
         public ICommand PullToRefreshCommand =>
             _pullToRefreshCommand ?? (_pullToRefreshCommand = new Command(RefreshPage));
 
+        public ICommand InfoWindowClickedCommand =>
+            _InfoWindowClickedCommand ?? (_InfoWindowClickedCommand = new Command<Xamarin.Forms.Maps.Pin>(InfoWindowClicked));
+
         public HomeViewModel(INavigation navigation)
         {
             _navigation = navigation;
@@ -63,6 +74,13 @@ namespace Laboratoria.ViewModels
 
         private void NavitageToDetailsPage(Measurements item)
         {
+            _navigation.PushAsync(new DetailsPage(item));
+        }
+
+        private void InfoWindowClicked(Xamarin.Forms.Maps.Pin pin)
+        {
+            var address = pin.Address;
+            Measurements item = this.Measurements.First<Measurements>(i => i.Installation.Address.Description.Equals(address));
             _navigation.PushAsync(new DetailsPage(item));
         }
 
@@ -139,6 +157,13 @@ namespace Laboratoria.ViewModels
                     //get Date from Request
                     this.TillDate = response.Current.TillDateTime;
                     measurements.Add(response);
+                    this.Measurements = measurements;
+                    Locations = measurements.Select(i => new MapLocation
+                    {
+                        Address = i.Installation.Address.Description,
+                        Description = "CAQI: " + i.CurrentDisplayValue,
+                        Position = new Xamarin.Forms.Maps.Position(i.Installation.Location.Latitude, i.Installation.Location.Longitude)
+                    }).ToList();
                 }
             }
 

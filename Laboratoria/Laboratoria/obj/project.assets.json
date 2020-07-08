@@ -197,7 +197,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.7.0.968": {
+      "Xamarin.Forms/4.7.0.937-pre4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -212,6 +212,18 @@
         "build": {
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/4.7.0.937-pre4": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.937-pre4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
         }
       }
     }
@@ -645,10 +657,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.7.0.968": {
-      "sha512": "VvHI/VXyDZcCLYXywh9A8gVtldD8XCLR8hujZVdlKGh87HIXAUW0b+uLFsvyMB8COwNce0w56ycgD/tXtLgFRA==",
+    "Xamarin.Forms/4.7.0.937-pre4": {
+      "sha512": "CrvAxSbhxh6oyXK5ffSNa7q8AoO4puyTL3dDh70LeZHH6dDR+PsIpOcuS7ufKnJz0aqSD0UeSYSXtLnRmfZlGg==",
       "type": "package",
-      "path": "xamarin.forms/4.7.0.968",
+      "path": "xamarin.forms/4.7.0.937-pre4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -955,8 +967,45 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.7.0.968.nupkg.sha512",
+        "xamarin.forms.4.7.0.937-pre4.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Maps/4.7.0.937-pre4": {
+      "sha512": "J4tgPVsDgF4gPnEDTLAgyAEsn2sFxGQ3TPURdy68R3Fbp4j4Ihkyg5S8Bpq+uAz50bfboj7dhoXFoOxxfoDYQw==",
+      "type": "package",
+      "path": "xamarin.forms.maps/4.7.0.937-pre4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.4.7.0.937-pre4.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
       ]
     }
   },
@@ -965,7 +1014,8 @@
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.7.0.968",
+      "Xamarin.Forms >= 4.7.0.937-pre4",
+      "Xamarin.Forms.Maps >= 4.7.0.937-pre4",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
@@ -976,11 +1026,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
+      "projectUniqueName": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
       "projectName": "Laboratoria",
-      "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
+      "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
       "packagesPath": "C:\\Users\\Tomek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\obj\\",
+      "outputPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -1027,7 +1077,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.7.0.968, )"
+            "version": "[4.7.0.937-pre4, )"
+          },
+          "Xamarin.Forms.Maps": {
+            "target": "Package",
+            "version": "[4.7.0.937-pre4, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

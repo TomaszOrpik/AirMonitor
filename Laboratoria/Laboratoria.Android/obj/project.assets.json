@@ -845,6 +845,12 @@
           "build/monoandroid90/Xamarin.Android.Support.ViewPager.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.4.11": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "dependencies": {
@@ -886,13 +892,108 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.1080": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v7.AppCompat": "28.0.0.3",
+          "Xamarin.Forms": "4.7.0.1080",
+          "Xamarin.GooglePlayServices.Maps": "71.1610.0"
+        },
+        "compile": {
+          "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll": {},
+          "lib/MonoAndroid90/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll": {},
+          "lib/MonoAndroid90/Xamarin.Forms.Maps.dll": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Base/71.1610.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.GooglePlayServices.Basement": "71.1620.0",
+          "Xamarin.GooglePlayServices.Tasks": "71.1601.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Base.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Base.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/71.1620.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v4": "28.0.0.1",
+          "Xamarin.Build.Download": "0.4.11"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Maps/71.1610.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.GooglePlayServices.Base": "71.1610.0",
+          "Xamarin.GooglePlayServices.Basement": "71.1620.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Maps.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Maps.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/71.1601.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11",
+          "Xamarin.GooglePlayServices.Basement": "71.1620.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Tasks.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Tasks.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Tasks.targets": {}
+        }
+      },
       "Laboratoria/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.968",
+          "Xamarin.Forms": "4.7.0.937-pre4",
+          "Xamarin.Forms.Maps": "4.7.0.937-pre4",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1830,6 +1931,24 @@
         "xamarin.android.support.viewpager.nuspec"
       ]
     },
+    "Xamarin.Build.Download/0.4.11": {
+      "sha512": "svGAoBnMVQwUbIv1+j7vDypY+2R7jruefJRmVsxhuvSFXMP8dV+yZK3UGuZa3zV5ThKimk9eqHuvRcl/JVipbA==",
+      "type": "package",
+      "path": "xamarin.build.download/0.4.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Mono.Cecil.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/System.Net.Http.Formatting.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.4.11.nupkg.sha512",
+        "xamarin.build.download.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.5.3.2": {
       "sha512": "BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
       "type": "package",
@@ -2192,6 +2311,98 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Maps/4.7.0.1080": {
+      "sha512": "l3mD55hvLQNxGPUTQWilCREkeoJ+vd6NjMgYFZTxQmUnrbwbz3v6HDCRRuIzXRNKnng+KQbppCGg6hfnIAcp6Q==",
+      "type": "package",
+      "path": "xamarin.forms.maps/4.7.0.1080",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.4.7.0.1080.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Base/71.1610.0": {
+      "sha512": "OfCNkkmxU96KkTs94wEL2bbFEuHJWw5rZg70lyF+BAr5t59/+bSc/jyi7wVn3BTJy4NjiFi7NTQDzJYuJg5DJg==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.base/71.1610.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Base.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Base.dll",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.base.71.1610.0.nupkg.sha512",
+        "xamarin.googleplayservices.base.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Basement/71.1620.0": {
+      "sha512": "PUm6rz7if+8k0dp/lf9Klnujj9Wc0JZDtExNQKUBpHhG9X1dWHAJcyYL5XwVnBQFeQwgKwkADPRfL2ImsWffOA==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.basement/71.1620.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Basement.targets",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Tasks.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.basement.71.1620.0.nupkg.sha512",
+        "xamarin.googleplayservices.basement.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Maps/71.1610.0": {
+      "sha512": "zU0haiLNzg++mDqVMg36yhHVBiRYM9u3O7vgTLEp+fgDN3Nh133k5SJtjHBhooXxZ/2tFvaYWakHvF4kzqIw1A==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.maps/71.1610.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Maps.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Maps.dll",
+        "xamarin.googleplayservices.maps.71.1610.0.nupkg.sha512",
+        "xamarin.googleplayservices.maps.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Tasks/71.1601.0": {
+      "sha512": "1+vlOECCQhcIhnuzBW72sXTWdsR9hvNqa/jre61R7IuG+UkqREnL+Zm9jaG1i/dLBV9hUlzAikbxvM+wYqLjpQ==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.tasks/71.1601.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Tasks.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Tasks.dll",
+        "xamarin.googleplayservices.tasks.71.1601.0.nupkg.sha512",
+        "xamarin.googleplayservices.tasks.nuspec"
+      ]
+    },
     "Laboratoria/1.0.0": {
       "type": "project",
       "path": "../Laboratoria/Laboratoria.csproj",
@@ -2204,6 +2415,7 @@
       "Newtonsoft.Json >= 12.0.3",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.7.0.968",
+      "Xamarin.Forms.Maps >= 4.7.0.1080",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
@@ -2214,11 +2426,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj",
       "projectName": "Laboratoria.Android",
-      "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj",
+      "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj",
       "packagesPath": "C:\\Users\\Tomek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria.Android\\obj\\",
+      "outputPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2239,8 +2451,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj": {
-              "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj"
+            "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj": {
+              "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj"
             }
           }
         }
@@ -2261,6 +2473,10 @@
             "target": "Package",
             "version": "[4.7.0.968, )"
           },
+          "Xamarin.Forms.Maps": {
+            "target": "Package",
+            "version": "[4.7.0.1080, )"
+          },
           "sqlite-net-pcl": {
             "target": "Package",
             "version": "[1.7.335, )"
@@ -2268,5 +2484,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.7.0.1080 to 4.7.0.968. Reference the package directly from the project to select a different version. \r\n Laboratoria.Android -> Xamarin.Forms.Maps 4.7.0.1080 -> Xamarin.Forms (>= 4.7.0.1080) \r\n Laboratoria.Android -> Xamarin.Forms (>= 4.7.0.968)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    }
+  ]
 }

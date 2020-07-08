@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YkVXIqYUUx3d+ijMFQfpxjAGqbG9/JDNUaOeW6GSBHXExcV1MljtN2qQ+f+aEahb59ESfmCYwUBbIf6mBe6BUg==",
+  "dgSpecHash": "9NyUoKFRK/iS1ni7vCg74TbIKRl6bZGRfZFn9swuqeXMAjDb0xwXCfj+uQZIYETPOLxMjxQakYsCCP6F1w/hSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
+  "projectFilePath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tomek\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tomek\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
@@ -17,7 +17,8 @@
     "C:\\Users\\Tomek\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Tomek\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Tomek\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\Tomek\\.nuget\\packages\\xamarin.forms\\4.7.0.968\\xamarin.forms.4.7.0.968.nupkg.sha512"
+    "C:\\Users\\Tomek\\.nuget\\packages\\xamarin.forms\\4.7.0.937-pre4\\xamarin.forms.4.7.0.937-pre4.nupkg.sha512",
+    "C:\\Users\\Tomek\\.nuget\\packages\\xamarin.forms.maps\\4.7.0.937-pre4\\xamarin.forms.maps.4.7.0.937-pre4.nupkg.sha512"
   ],
   "logs": []
 }

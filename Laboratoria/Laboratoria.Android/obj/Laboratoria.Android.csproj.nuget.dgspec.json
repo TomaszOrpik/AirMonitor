@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj": {}
+    "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj": {
+    "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj",
         "projectName": "Laboratoria.Android",
-        "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj",
+        "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria.Android\\Laboratoria.Android.csproj",
         "packagesPath": "C:\\Users\\Tomek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria.Android\\obj\\",
+        "outputPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj": {
-                "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj"
+              "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj": {
+                "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[4.7.0.968, )"
             },
+            "Xamarin.Forms.Maps": {
+              "target": "Package",
+              "version": "[4.7.0.1080, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.7.335, )"
@@ -62,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj": {
+    "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
+        "projectUniqueName": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
         "projectName": "Laboratoria",
-        "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
+        "projectPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\Laboratoria.csproj",
         "packagesPath": "C:\\Users\\Tomek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor\\Laboratoria\\Laboratoria\\obj\\",
+        "outputPath": "C:\\Users\\Tomek\\Desktop\\GitHub\\AirMonitor2\\AirMonitor\\Laboratoria\\Laboratoria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -116,7 +120,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.7.0.968, )"
+              "version": "[4.7.0.937-pre4, )"
+            },
+            "Xamarin.Forms.Maps": {
+              "target": "Package",
+              "version": "[4.7.0.937-pre4, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

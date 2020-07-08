@@ -3,8 +3,8 @@
              xmlns:views="clr-namespace:Laboratoria"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:views1="clr-namespace:Laboratoria.Views"
+            mc:Ignorable="d"
              x:Class="Laboratoria.TabMainPage"
              >
   <!--Pages can be added as references or inline-->
@@ -20,7 +20,7 @@
     </NavigationPage>
     <NavigationPage Title="Map" IconImageSource="baseline_map_black_24">
         <x:Arguments>
-            <views:Settings/>
+            <views1:MapPage/>
         </x:Arguments>
     </NavigationPage>
 </TabbedPage>
